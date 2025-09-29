@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Champions League News</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Aside hover */
+    aside ul li:hover {
+      color: #0d6efd;
+      border-bottom: 2px solid #0d6efd;
+      cursor: pointer;
+    }
+
+    /* Responsive: ocultar noticias 2 y 3 en móvil */
+    @media (max-width: 768px) {
+      .extra-news {
+        display: none;
+      }
+      #btn-mas-noticias {
+        display: block;
+      }
+    }
+
+    @media (min-width: 769px) {
+      #btn-mas-noticias {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Encabezado -->
+  <header class="bg-dark text-white p-3 d-flex align-items-center">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/UEFA_Champions_League_logo_2.svg/1200px-UEFA_Champions_League_logo_2.svg.png" 
+         alt="Logo Champions" width="60" class="me-3">
+    <h1 class="h3 m-0">Champions League News</h1>
+  </header>
+
+  <!-- Main + Aside -->
+  <div class="container my-4">
+    <div class="row">
+      
+      <!-- Contenido principal -->
+      <main class="col-md-8">
+        <article class="mb-4 p-3 bg-white shadow-sm rounded">
+          <h2>Primera Noticia</h2>
+          <p>El Real Madrid avanza a semifinales tras un partido vibrante en el Santiago Bernabéu...</p>
+          <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+        </article>
+
+        <article class="mb-4 p-3 bg-white shadow-sm rounded extra-news">
+          <h2>Segunda Noticia</h2>
+          <p>El Manchester City sigue mostrando su poder ofensivo y se perfila como favorito...</p>
+          <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+        </article>
+
+        <article class="mb-4 p-3 bg-white shadow-sm rounded extra-news">
+          <h2>Tercera Noticia</h2>
+          <p>El FC Barcelona busca reforzarse de cara a la próxima temporada tras quedar eliminado...</p>
+          <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+        </article>
+
+        <!-- Botón ver más noticias en móvil -->
+        <button id="btn-mas-noticias" class="btn btn-outline-secondary w-100">Ver más noticias</button>
+      </main>
+
+      <!-- Aside -->
+      <aside class="col-md-4">
+        <div class="p-3 bg-white shadow-sm rounded">
+          <h3>Secciones</h3>
+          <ul class="list-unstyled">
+            <li class="py-2">Últimas Noticias</li>
+            <li class="py-2">Resultados</li>
+            <li class="py-2">Estadísticas</li>
+            <li class="py-2">Calendario</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-4 p-4">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Contacto</h5>
+        <p>Email: contacto@championsnews.com</p>
+        <p>Tel: +34 123 456 789</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h5>Síguenos</h5>
+        <p>
+          <a href="#" class="text-white me-2">Facebook</a>
+          <a href="#" class="text-white me-2">Twitter</a>
+          <a href="#" class="text-white">Instagram</a>
+          <a href="index.html">VOLVER</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
